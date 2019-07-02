@@ -1,0 +1,11 @@
+
+;; debug-rectangle-starter.rkt
+
+; PROBLEM:
+; 
+; Uncomment the code below and fix the error(s).
+; 
+
+(require 2htdp/image)
+
+(rectangle 10 20 "solid" "red")
