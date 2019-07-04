@@ -1,0 +1,23 @@
+(require 2htdp/image)
+;; blue-triangle-starter.rkt
+
+; PROBLEM:
+; 
+; Design a function that consumes a number and produces a blue solid triangle of that size.
+; 
+; You should use The How to Design Functions (HtDF) recipe, and your complete design should include
+; signature, purpose, commented out stub, examples/tests, commented out template and the completed function.
+
+
+;; Number -> Image
+;; produces a blue solid triangle of size Number
+(check-expect (blueTri 40) (triangle 40 "solid" "blue"))
+(check-expect (blueTri 5) (triangle 5 "solid" "blue"))
+
+;(define (blueTri num) "img")
+
+;(define (blueTri num)
+;  (...num))
+
+(define (blueTri num)
+  (triangle num "solid" "blue"))
