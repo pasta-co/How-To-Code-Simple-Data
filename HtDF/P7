@@ -1,0 +1,27 @@
+(require 2htdp/image)
+
+;; make-box-starter.rkt
+
+; 
+; PROBLEM:
+; 
+; You might want to create boxes of different colours.
+; 
+; Use the How to Design Functions (HtDF) recipe to design a function that consumes a color, and creates a 
+; solid 10x10 square of that colour.  Follow the HtDF recipe and leave behind commented out versions of
+; the stub and template.
+; 
+
+
+;; String -> Image
+;; produces a solid square of the color imputed
+(check-expect (makeBox "yellow") (square 10 "solid" "yellow"))
+(check-expect (makeBox "blue") (square 10 "solid" "blue"))
+
+;(define (makeBox color) 0)
+
+;(define (makeBox color)
+;  (...color))
+
+(define (makeBox color)
+  (square 10 "solid" color))
